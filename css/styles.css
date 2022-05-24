@@ -5,6 +5,7 @@
   --second-title-color: #fff;
   --firs-text-color: #fff;
   --accent-color: #ff6c00;
+  --typical-margin: 20px;
 }
 p,
 h1,
@@ -23,14 +24,18 @@ ol {
 button {
   cursor: pointer;
 }
+img {
+  display: block;
+}
 body {
   font-family: 'Open Sans', sans-serif;
 }
-.container{
+.container {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 1px solid red;
 }
 .list {
   list-style: none;
@@ -109,9 +114,11 @@ body {
 }
 .hero-content {
   background-color: var(--second-btn-color);
+  padding: 272px 96px 206px 96px;
 }
 .hero-top-text {
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: var(--typical-margin);
 }
 .hero-title {
   font-family: 'Raleway', sans-serif;
@@ -119,25 +126,36 @@ body {
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--main-title-color);
+  margin-bottom: var(--typical-margin);
 }
 .hero-bottom-text {
   color: #9da4bd;
+  max-width: 400px;
 }
+
 /*------------about----------------------*/
+.about {
+  padding-top: 139px;
+  padding-bottom: 121px;
+}
 .about-top-text {
   color: #303030;
+  margin-bottom: var(--typical-margin);
 }
 .about-title {
   color: var(--second-title-color);
+  margin-bottom: var(--typical-margin);
 }
 .about-bottom-text {
   color: #555555;
+  margin-bottom: var(--typical-margin);
 }
 .about-text {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: 40px;
 }
 .about-btn {
   color: #303030;
