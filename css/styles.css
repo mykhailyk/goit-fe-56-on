@@ -6,11 +6,32 @@
   --firs-text-color: #fff;
   --accent-color: #ff6c00;
 }
-
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
 body {
   font-family: 'Open Sans', sans-serif;
 }
-
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .list {
   list-style: none;
 }
@@ -141,14 +162,6 @@ body {
   color: #ffffff;
 }
 /*------------benefits----------------------*/
-.benefits {
-}
-.benefits-list {
-}
-.list {
-}
-.benefits-item {
-}
 .benefits-item-count {
   font-weight: 700;
   font-size: 42px;
@@ -213,20 +226,6 @@ body {
 .contacts-address {
   font-style: normal;
 }
-.contacts {
-}
-.contacts-title {
-}
-.title {
-}
-.contacts-address {
-}
-.address-list {
-}
-.list {
-}
-.contacts-item {
-}
 .contacts-link {
   font-size: 18px;
   line-height: 1.67;
@@ -265,6 +264,7 @@ body {
   color: #303030;
 }
 
-.footer-link:hover, .footer-link:focus {
+.footer-link:hover,
+.footer-link:focus {
   color: var(--accent-color);
 }
