@@ -307,10 +307,13 @@ body {
 .masters-list {
   display: flex;
   margin-left: -30px;
+
 }
+
 .masters-item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
+
 }
 .masters-item-title {
   font-weight: 400;
@@ -333,6 +336,15 @@ body {
 
 .gallery-top-text {
   color: #303030;
+}
+.gallery-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.gallery-item{
+  flex-basis: calc(100% / 4 - 30px);
+  margin: 15px;
 }
 /*------------online----------------------*/
 .online-title {
