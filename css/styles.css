@@ -309,11 +309,10 @@ body {
   margin-left: -30px;
 
 }
-
 .masters-item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
-
+    justify-content: center;
 }
 .masters-item-title {
   font-weight: 400;
