@@ -223,9 +223,14 @@ body {
 /*------------prices----------------------*/
 .prices {
   background-color: #111319;
-  background-image: url(../images/prices-bg.jpg);
+  background-image: url(../images/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 130px;
   padding-bottom: 130px;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 .prices-wrap {
   display: flex;
@@ -286,19 +291,23 @@ body {
   padding-top: 143px;
   padding-bottom: 137px;
 }
-.benefits-top-text {
-  margin-bottom: var(--typical-margin);
-  color: #303030;
-}
-.benefits-title {
-  margin-bottom: var(--typical-margin);
-  color: var(--second-title-color);
-}
 .benefits-item {
   width: 170px;
   height: 133px;
   border: 1px solid #000;
   padding: 20px 24px;
+  display: block;
+}
+.benefits-list {
+  width: 470px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.benefits-item:nth-child(odd) {
+  margin-right: 30px;
+}
+.benefits-item:nth-child(even) {
+  margin-top: 30px;
 }
 .benefits-item-count {
   font-weight: 700;
@@ -316,6 +325,15 @@ body {
   text-align: center;
   color: #303030;
 }
+.benefits-top-text {
+  margin-bottom: var(--typical-margin);
+  color: #303030;
+}
+.benefits-title {
+  margin-bottom: var(--typical-margin);
+  color: var(--second-title-color);
+}
+
 .benefits-bottom-text {
   color: #555555;
 }
@@ -361,7 +379,41 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  margin-bottom: 30px;
 }
+.masters-soc-list {
+  display: flex;
+  justify-content: center;
+}
+.masters-soc-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+.masters-soc-item:last-child {
+  margin-right: 0;
+}
+.masters-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: #ff6c00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.masters-soc-link:hover,
+.masters-soc-link:focus {
+  background-color: teal;
+}
+.masters-soc-icon {
+  fill: #fff;
+}
+.masters-soc-link:hover .masters-soc-icon,
+.masters-soc-link:focus .masters-soc-icon {
+  fill: #000;
+}
+
 /*------------gallery----------------------*/
 
 .gallery-top-text {
