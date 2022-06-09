@@ -292,14 +292,13 @@ body {
   padding-bottom: 137px;
 }
 .benefits-item {
-  width: 170px;
-  height: 133px;
-  border: 1px solid #000;
+  width: 122px;
+  height: 93px;
   padding: 20px 24px;
   display: block;
 }
 .benefits-list {
-  width: 470px;
+  width: 370px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -317,6 +316,15 @@ body {
   letter-spacing: 0.05em;
   color: #303030;
   display: block;
+}
+.benefits-item-count::after {
+  content: '+';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: center;
+  color: #ff6c00;
+  vertical-align: top;
 }
 .benefits-item-text {
   font-weight: 600;
