@@ -223,7 +223,7 @@ body {
 /*------------prices----------------------*/
 .prices {
   background-color: #111319;
-  background-image: url(../images/hero-bg.png);
+  background-image: url(../images/prices.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -421,9 +421,10 @@ body {
 .masters-soc-link:focus .masters-soc-icon {
   fill: #000;
 }
-
 /*------------gallery----------------------*/
-
+.gallery {
+  margin-bottom: 130px;
+}
 .gallery-top-text {
   color: #303030;
 }
@@ -437,16 +438,43 @@ body {
   margin: 15px;
 }
 /*------------online----------------------*/
+.contacts-wrap {
+  background-color: #191c26;
+  background-image: url(../images/footer.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: calc(50% - 15px);
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.online {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  width: calc(50% + 15px);
+}
 .online-title {
   color: var(--main-title-color);
 }
 /*------------contacts----------------------*/
-
+.contacts {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  width: calc(50% - 15px);
+  padding-left: 100px;
+}
+.contacts-wrap .container {
+  display: flex;
+}
 .contacts-title {
   color: var(--main-title-color);
+  margin-bottom: 40px;
+}
+.contacts-item + .contacts-item {
+  margin-top: var(--typical-margin);
 }
 .contacts-address {
   font-style: normal;
+  margin-bottom: 70px;
 }
 .contacts-link {
   font-size: 18px;
@@ -461,6 +489,7 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: var(--typical-margin);
 }
 .time {
   font-size: 18px;
